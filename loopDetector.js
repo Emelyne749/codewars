@@ -17,7 +17,6 @@ function hasLoop(indices) {
     while (i<= indices.length){
         if(visited.includes(indices[i])){
             return true
-            break;
         }
         
         else{
