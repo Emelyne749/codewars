@@ -19,7 +19,7 @@ If there is nothing to sum, the sum is default to 0.
 
 
 function positiveSum(arr) {
-  return arr.reduce((sum=0, a)=>{
+  return arr.reduce((sum, a)=>{
     if(a>0) return sum=sum+a
     else return sum
   },0)
