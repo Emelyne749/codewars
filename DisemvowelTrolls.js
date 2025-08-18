@@ -14,5 +14,3 @@ function getCount(str) {
   var vowel = "aeiouAEIOU"
   return str.toLowerCase().split("").filter((char)=> !(vowel.includes(char))).join("")
 }
-
-console.log(getCount("hellO my friend"));
