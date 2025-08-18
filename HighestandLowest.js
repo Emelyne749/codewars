@@ -13,5 +13,3 @@ function highAndLow(numbers){
   const min = arr.reduce((low,n,)=>Number(n)<low? low=Number(n):low,Number(arr[0]))
   return `${max} ${min}`
 }
-
-console.log(highAndLow("-1"));
