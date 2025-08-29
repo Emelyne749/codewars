@@ -13,5 +13,5 @@ See the examples and try to guess the pattern:
 
 
 function EvenOdd(arr){
-  return arr.reduce((result, a, i)=> (i%2==1)? result*a: result+a, 0)
+  return arr.reduce((result, a, i)=> (i % 2 == 1)? result*a : result+a, 0)
 }
