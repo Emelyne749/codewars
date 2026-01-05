@@ -10,3 +10,4 @@ function moveZeros(arr) {
   
   return [...ans,...zer]
 }
+
