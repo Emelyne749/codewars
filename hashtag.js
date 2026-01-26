@@ -17,15 +17,15 @@ function generateHashtag(str) {
   if (!str || str.trim().length === 0) return false;
 
   const words = str.trim().split(" ");
-  const capitalizedWords = [];
+  const capWords = [];
 
   for (let word of words) {
     if (word !== "") {
-      capitalizedWords.push(word[0].toUpperCase() + word.slice(1).toLowerCase());
+      capWords.push(word[0].toUpperCase() + word.slice(1).toLowerCase());
     }
   }
 
-  const hashtag = "#" + capitalizedWords.join("");
+  const hashtag = "#" + capWords.join("");
 
   return hashtag.length > 140 ? false : hashtag;
 }
