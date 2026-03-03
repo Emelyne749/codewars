@@ -22,5 +22,28 @@
 
 
 snail = function(array) {
-  // enjoy
+    let result = []
+    let arr = array[0]
+    arr.forEach(n=> {
+        result.push(n)
+    })
+    for(n=1; n<= array.length; n++){
+        if(n==array.length){
+            for(i=(n-1);i>=0;i--){
+                result.push(array[n][i])
+            }
+        }
+        else{
+            result.push(array[n][n-1])
+        }
+    }
+    return result
 }
+
+
+console.log(snail([[1,2,3], [4,5,6], [7,8,9]]))
+
+
+let nbrs = [[1,2,3], [4,5,6], [7,8,9]]
+
+// console.log(nbrs[0,1])
